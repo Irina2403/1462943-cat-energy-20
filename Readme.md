@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ирина Березина](https://up.htmlacademy.ru/adaptive/20/user/1462943).
-* Наставник: `Неизвестно`.
+* Наставник: Влад Башилов.
 
 ---
 
