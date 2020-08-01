@@ -1,66 +1,67 @@
 <!DOCTYPE html>
 <html class="page" lang="ru"> 
-
+<head> 
   <meta charset="utf-8">
   <title>HTML Academy: Кэт Энерджи</title> 
-</head> 
-<body class="page__body">
+  <link rel="stylesheet" href="./css/style.css">
 
-    <header class="page-header">
-        <img class="page-header__logo" src="#" width="33" height="37" alt="logo">
-        <a class="page-header__name" href="index.html">CAT ENERGY</a>
-        <nav class="pade-header__main-nav">
-            <button class="main-nav__toggle" type="button">
-                <span class="visually-hidden">Открыть меню</span>
-                <img src="#" width="24" height="17" alt="Меню-бургер"></button>
-        </nav>
-    </header>
-    <main class="page-inner-second"> 
-        <h1>Подбор программы</h1>
-        <section class="program"> 
-          <h2 class="program-title">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
-          <form class="program-form" action="hhtps://echo.htmlacademy.ru" method="post">
-              <fieldset class="program-form-place">  
-            <div class="program-item"> 
-              <label for="name">ИМЯ:*</label>
-              <input type="text" name="your-name" id="name" placeholder="БАРСИК" required> 
-            </div>
-            <div class="program-item"> 
-              <label for="weight">Вес (кг):*</label>
-              <input type="text" name="your-weight" id="weight" placeholder="7" required> 
-            </div>
-            <div class="program-item"> 
-              <label for="age">Возраст (лет):</label>
-              <input type="text" name="your-age" id="age" placeholder="7" required> 
-            </div>
-              </fieldset>
-              <fieldset class="program-form-goal"> 
-                <div class="goal-list">  
-                   <input class="goal-item" type="radio" name="slim" id="goal-slim" checked>
-                   <label for="goal-slim">ПОХУДЕНИЕ</label>
-                </div>
-                <div class="goal-list">
-                    <input class="goal-item" type="radio" name="massa" id="goal-massa">
-                    <label for="goal-massa">НАБОР МАССЫ</label>
-                </div>
-                <div class="goal-list">
-                    <input class="goal-item" type="radio" name="none" id="goal-none">
-                    <label for="goal-none">Не знаю (Нужен ваш совет)</label>
-                </div>  
-              </fieldset> 
-            </form>
-        </section>
-        <section class="parents-contacts">  
-          <div class="contacts">
-          <h2 class="contacts-title">Контактные данные(владельца кота)</h2>
-          <div class="contacts green-line"></div>
+</head> 
+<body class="page__body"> 
+  <header class="page-header">
+    <img class="page-header__logo" src="#" width="33" height="37" alt="logo">
+    <a class="page-header__name" href="index.html">CAT ENERGY</a>
+    <nav class="pade-header__main-nav">
+      <button class="main-nav__toggle" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+      <img src="#" width="24" height="17" alt="Меню-бургер"></button>
+    </nav>
+  </header>
+  <main class="page-inner-second"> 
+    <h1>Подбор программы</h1>
+    <section class="program"> 
+      <h2 class="program-title">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
+      <form class="program-form" action="hhtps://echo.htmlacademy.ru" method="post">
+        <fieldset class="program-form-place">  
+          <div class="program-item"> 
+            <label for="name">ИМЯ:*</label>
+            <input type="text" name="your-name" id="name" placeholder="БАРСИК" required> 
           </div>
-          <div class="contacts-mail"> 
-          <label for="mail">E-mail:*</label>
-          <input type="text" name="your-mail" id="mail" placeholder="kuklachev@gmail.com" required> 
-          <img src="#" width="20" height="14" alt="Письмо">
-          </div> 
-          <div class="contacts-pnone"> 
+          <div class="program-item"> 
+            <label for="weight">Вес (кг):*</label>
+            <input type="text" name="your-weight" id="weight" placeholder="7" required> 
+          </div>
+          <div class="program-item"> 
+            <label for="age">Возраст (лет):</label>
+            <input type="text" name="your-age" id="age" placeholder="7" required> 
+          </div>
+        </fieldset>
+        <fieldset class="program-form-goal"> 
+          <div class="goal-list">  
+            <input class="goal-item" type="radio" name="slim" id="goal-slim" checked>
+            <label for="goal-slim">ПОХУДЕНИЕ</label>
+          </div>
+          <div class="goal-list">
+            <input class="goal-item" type="radio" name="massa" id="goal-massa">
+            <label for="goal-massa">НАБОР МАССЫ</label>
+          </div>
+          <div class="goal-list">
+            <input class="goal-item" type="radio" name="none" id="goal-none">
+            <label for="goal-none">Не знаю (Нужен ваш совет)</label>
+            </div>  
+        </fieldset> 
+      </form>
+    </section>
+    <section class="parents-contacts">  
+      <div class="contacts">
+        <h2 class="contacts-title">Контактные данные(владельца кота)</h2>
+          <div class="contacts green-line"></div>
+      </div>
+      <div class="contacts-mail"> 
+        <label for="mail">E-mail:*</label>
+        <input type="text" name="your-mail" id="mail" placeholder="kuklachev@gmail.com" required> 
+        <img src="#" width="20" height="14" alt="Письмо">
+      </div> 
+      <div class="contacts-pnone"> 
           <label for="number">Телефон:*</label>
           <input type="text" name="your-namber" id="number" placeholder="8 (960) 900-60-90" required> 
           <img src="#" width="20" height="20" alt="Трубка телефона">
@@ -111,7 +112,7 @@
             <img class="ask__map" width="320" height="362" alt="Карта проезда">
             <img class="ask__map" width="57" height="53" alt="Иконка суперкотика">
         </div> 
-    </main> 
+      </main> 
     <footer class="page-footer">
         <div class="page-footer__wrapper">
             <div class="page-footer__contacts contacts">
@@ -139,7 +140,5 @@
             </div>
         </div>
     </footer>  
-
-</body> 
-
+</body>  
 </html>
