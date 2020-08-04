@@ -5,11 +5,17 @@
   grid-template-rows: min-content 1fr min-content; 
   text-align: center;
   align-items: center; 
+  &__grey-line {
+    border: var(--basic_border);
+    width: 240px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
 } 
 .page-footer__wrapper {
   height: 236px; 
-  width: 320px;
-  
+  width: 320px; 
 } 
 .page-footer__contacts {
   margin-top: 39px;
@@ -28,12 +34,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: auto;
-
+  margin: auto; 
 }
 .page-footer__copyright {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   margin-left: 19px;
   margin-right: 20px;
   margin-top: 22px;
@@ -46,6 +52,7 @@
   font-size: 16px;
   line-height: 18px;
   color: var(--special_dark-grey);
+  text-decoration: none; 
 }
 .copyright__link-second svg {
   fill: var(--basic_logo); 

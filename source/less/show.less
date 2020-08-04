@@ -1,4 +1,4 @@
- .show-all {
+ .show-all {  
     &__pic {
         width: 30px;
         height: 30px; 
@@ -7,26 +7,35 @@
         margin-left: 145px; 
     }
     &__title {
+        font-family: Oswald;
         margin-right: 57px;
         margin-left: 59px; 
         font-size: 16px; 
-    }
+    } 
     &__comment {
-        margin-right: 50px;
-        margin-left: 49px; 
         font-family: Arial;
-        font-style: normal;
-        font-weight: normal;
+        margin-right: 50px;
+        margin-left: 49px;  
         font-size: 12px;
         line-height: 16px; 
-    }
-    &__click {
-        font: Oswald;
+    } 
+    &__click { 
+        font-family: Oswald;
         background-color: var(--basic_grey);
-        color: var(--special_dark-grey:#444444);
+        color: var(--special_dark-grey);
         margin-right: 20px;
         margin-left: 21px; 
         width: 279px;
         height: 40px;
-    }
-} /* */
+        border: 2px solid transparent;
+    } 
+} 
+
+      
+
+
+/*
+.show-all__comment {
+    background-color: var(--basic_green);
+
+} */
