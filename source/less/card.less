@@ -2,9 +2,18 @@
     &-main {
     display: flex;
     justify-content: center;
-    background-color: var(--basic_white);
-
-    } 
+    background-color: var(--basic_white); 
+    }
+    /* 
+    &__grey-line { 
+    position: relative;
+    background-color: var(__grey-line);  
+    width: 240px;
+    height: 2px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0); 
+    }*/
 } 
 .card {
     &__title {
@@ -49,10 +58,15 @@
     margin-bottom: 14px;
     margin-top: 13px;
     border: 2px solid transparent;
+    margin-bottom: 19px;
 
 }
-.card__item-img {
-  /*  width: 140px;
-    height: 112px;*/
-} 
+.card__item-grey-line {
+    width: 320px;
+    background-color:var(--basic_grey);  
+    height: 2px; 
+    margin-bottom: 8px;
+    
+}
+
  
