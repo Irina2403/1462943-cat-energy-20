@@ -1,20 +1,12 @@
  .show-all { 
     &__wrapper {
         margin-bottom: 25px; 
-    } 
-    &__pic {
-        width: 30px;
-        height: 30px; 
-        fill:var( --basic_grey);  
-        margin-right: 145px;
-        margin-left: 145px; 
-    }
+    }  
     &__title {
         font-family: Oswald;
         margin-right: 57px;
         margin-left: 59px; 
-        font-size: 16px;
-       
+        font-size: 16px; 
     } 
     &__comment {
         font-family: Arial;
@@ -40,12 +32,25 @@
         margin-bottom: 8px;
     }
 } 
-
-      
-
-
-/*
-.show-all__comment {
-    background-color: var(--basic_green);
-
-} */
+.show-all__pic { 
+    margin-top: 26px;
+    width: 30px;
+    height: 30px; 
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0); 
+    &-line {
+        width: 30px;
+        height: 2px; 
+        background-color: var(--special_grey-plus);
+        position: relative;
+    }
+    &-crossline {
+        width: 30px;
+        height: 2px;
+        background-color: var(--special_grey-plus);
+        transform: rotate(90deg);
+        position: relative;
+        top: -1px;
+    } 
+}
