@@ -8,9 +8,9 @@
       <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
    </head>
    <body class="page__body">
-      <div class="container grid-wrapper">
+      <div class="container grid-wrapper"> 
          <header class="page-header">
-            <svg version="1.1" id="Layer_1" width="190" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <svg class="page-header__logo" version="1.1" id="Layer_1" width="190" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                viewBox="0 0 190.4 37.6" style="enable-background:new 0 0 190.4 37.6;" xml:space="preserve">
                <style type="text/css">
                   .st0{fill:#FDC305;}
@@ -66,12 +66,17 @@
             <nav class="pade-header__main-nav">
                <button class="main-nav__toggle" type="button">
                   <span class="visually-hidden">Открыть меню</span>
-                  <svg version="1.1" id="Layer_1" width="24" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 18" style="enable-background:new 0 0 24 18;" xml:space="preserve">
-                     <rect y="16" width="24" height="2"/>
-                     <rect y="8" width="24" height="2"/>
-                     <rect width="24" height="2"/>
-                  </svg>
-               </button>
+                  <div class="hamburger"> 
+                    <span class="bar"></span> 
+                    <span class="bar"></span>
+                    <span class="bar"></span> 
+                  </div>  
+               </button><!--
+               <ul class="main-nav__list">
+                  <li class="main-nav__item"><a href="#">ГЛАВНАЯ</a></li>
+                  <li class="main-nav__item"><a href="#">КАТАЛОГ ПРОДУКЦИИ</a></li>
+                  <li class="main-nav__item"><a href="#">ПОДБОР ПРОГРАММЫ</a></li> 
+               </ul>-->
             </nav>
          </header>
          <main class="page-main">
@@ -114,7 +119,7 @@
                   <p class="lose-weight__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
                      Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
                   </p>
-                  <div class="lose-weight__grey-line"></div>
+                  <div class="lose-weight__divider-line"></div>
                   <div class="lose-weight__wrapper-link">
                      <span class="lose-weight__catalog">КАТАЛОГ SLIM</span>
                      <a class="lose-weight__link" href="#" aria-label="Переход на страницу каталога">
@@ -162,7 +167,7 @@
                   <p class="gain-weight__text">Заработать аторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет
                      вашему коту нарастить необходимые мышцы!
                   </p>
-                  <div class="gain-weight__grey-line"></div>
+                  <div class="gain-weight__divider-line"></div>
                   <div class="gain-weight__wrapper-link">
                      <span class="gain-weight__catalog">КАТАЛОГ PRO</span>
                      <a class="gain-weight__link" href="#" aria-label="Переход на страницу каталога PRO">
@@ -228,8 +233,8 @@
                   <div class="example__green-strip"></div>
                </div>
             </section>
-            <div class="ask">
-               <div class="ask-wrapper">
+            <div class="ask--index">
+               <div class="ask-wrapper--index">
                   <p class="ask__dealer">приглашаем 
                      к сотрудничеству дилеров!
                   </p>

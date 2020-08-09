@@ -66,15 +66,16 @@
             <nav class="pade-header__main-nav">
                <button class="main-nav__toggle" type="button">
                   <span class="visually-hidden">Открыть меню</span>
-                  <svg version="1.1" id="Layer_1" width="24" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 18" style="enable-background:new 0 0 24 18;" xml:space="preserve">
-                     <rect y="16" width="24" height="2"/>
-                     <rect y="8" width="24" height="2"/>
-                     <rect width="24" height="2"/>
-                  </svg>
+                  <div class="hamburger"> 
+                     <span class="bar"></span> 
+                     <span class="bar"></span>
+                     <span class="bar"></span> 
+                   </div> 
                </button>
             </nav>
          </header>
-         <main class="page-inner-second">
+         <main class="page-inner-form">
+            <div class="program__divider-line"></div>
             <h1 class="program-main-title">Подбор программы</h1>
             <section class="program">
                <h2 class="program-title">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
@@ -93,7 +94,7 @@
                         <input class="program-item__value-age" type="text" name="your-age" id="age" placeholder="7" required> 
                      </div>
                   </fieldset>
-                  <div class="program__grey-line"></div>
+                  <div class="program__divider-line"></div>
                   <fieldset class="program-form-goal">
                      <div class="goal-list">  
                         <input class="goal-item" type="radio" name="slim" id="goal-slim" checked>
@@ -108,13 +109,13 @@
                         <label class="goal-none" for="goal-none">НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)</label>
                      </div>
                   </fieldset>
-                  <div class="program__grey-line"></div>
+                  <div class="program__divider-line"></div>
                </form>
             </section>
             <section class="parents-contacts">
                <div class="contacts-data">
                   <p class="contacts-title">Контактные данные (владельца кота)</p>
-                  <div class="contacts__green-line"></div>
+                  <div class="contacts__decor-line"></div>
                </div>
                <div class="contacts-adress">
                   <label class="contacts-mail" for="mail">E-MAIL:*</label>
@@ -139,14 +140,14 @@
             <section class="your-comments">
                <div class="comments">
                   <h2 class="comments__title">Комментарий</h2>
-                  <div class="comments__green-line"></div>
+                  <div class="comments__decor-line"></div>
                </div>
                <textarea class="comments__place" name="your-comments" id="comment">РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА</textarea>
             </section>
             <section class="form">
                <div class="form__extra">
                   <h2 class="form__title">Дополнительно</h2>
-                  <div class="form__green-line"></div>
+                  <div class="form__decor-line"></div>
                </div>
                <div class="form-wrapper">
                   <ul class="form-wrapper-list">

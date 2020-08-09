@@ -1,21 +1,40 @@
 .lose-weight {
-    height: 266px;
     font:inherit;
     background-color: var(--basic_grey); 
     margin: 20px;
-    &__grey-line {
+    //@media (min-width:@mobile-width-only) {
+    height: 266px; 
+    width: 280px;  
+    //}  
+    /*@media (min-width:@tablet-width) {
+        width: 708px;
+        height: 372px;   
+    }
+    @media (min-width: @desktop-width) {
+        width: 570px;
+        height: 374px; 
+    } */
+    &__divider-line {
+       // @media (min-width:@mobile-width-only) { 
         border: var(--basic_border);
         width: 240px;
         position: relative;
         left: 50%;
-        transform: translate(-50%, 0);
+        transform: translate(-50%, 0); 
+        //}
+        /*@media (min-width:@tablet-width) {
+            display: none;
+        }
+        @media (min-width: @desktop-width) {
+            display: none; 
+        } */
     }
 }
+
 .lose-weight__wrapper-small {
     display: flex;
-    margin-top: 22px;
-    margin-left: 19px;
-    margin-right: 79px;
+    margin-top: 22px; 
+    padding-left: 19px; 
     color: var(--basic_black); 
 }
 .lose-weight__pic {

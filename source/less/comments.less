@@ -7,31 +7,33 @@
     flex-direction: row;
     &__title {
         width: 121px;
-        height: 26px;
-
+        height: 26px; 
     }
-    &__green-line {
+    &__decor-line {
        position: relative;
         top: 30px;
         width: 158px;
         height: 2px;
         background-color: var(--basic_green);
-        margin-left: 22px;
-        
+        margin-left: 22px; 
     }
     &__place {
-        width: 280px;
+        width: 265px;
         height: 150px;
         font-size: 16px;
         line-height: 18px;
-        margin-bottom: 27px;
-        margin-left: 20px;
-        margin-right: 20px;
-        font-family: Oswald; 
-        padding-left: 35px; 
+        //margin-bottom: 27px; 
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0); 
+        font-family: Oswald;  
+        padding-left: 15px; 
         padding-top: 13px; 
         outline:none;
         color: var(--special_dark-grey); 
         border: var(--special_border-grey);
     }
+}
+.your-comments {
+    background-color: var(--basic_white);
 }

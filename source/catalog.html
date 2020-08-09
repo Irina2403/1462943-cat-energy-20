@@ -66,15 +66,16 @@
             <nav class="pade-header__main-nav">
                <button class="main-nav__toggle" type="button">
                   <span class="visually-hidden">Открыть меню</span>
-                  <svg version="1.1" id="Layer_1" width="24" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 18" style="enable-background:new 0 0 24 18;" xml:space="preserve">
-                     <rect y="16" width="24" height="2"/>
-                     <rect y="8" width="24" height="2"/>
-                     <rect width="24" height="2"/>
-                  </svg>
+                  <div class="hamburger"> 
+                     <span class="bar"></span> 
+                     <span class="bar"></span>
+                     <span class="bar"></span> 
+                   </div>  
                </button>
             </nav>
          </header>
-         <main class="page-inner-first">
+         <main class="page-inner-catalog">
+            <div class="card__item-divider-line"></div>
             <h1><b>Каталог продукции</b></h1>
             <div class="card__item card__item--orange">
                <div class="card_item-main">
@@ -92,7 +93,7 @@
                </div>
                <button class="card__item-order">ЗАКАЗАТЬ</button>
             </div>
-            <div class="card__item-grey-line"></div>
+            <div class="card__item-divider-line"></div>
             <div class="card__item card__item--orange">
                <div class="card_item-main">
                   <img class="card__item-img card__item-img--big" src="img/chicken-big-mobile@1x.jpg" width="140" height="144" alt="Большая упаковка">
@@ -107,7 +108,7 @@
                </div>
                <button class="card__item-order">ЗАКАЗАТЬ</button>
             </div>
-            <div class="card__item-grey-line"></div>
+            <div class="card__item-divider-line"></div>
             <div class="card__item card__item--green">
                <div class="card_item-main">
                   <img class="card__item-img" src="img/fish-small-mobile@1x.jpg" width="140" height="144" alt="Маленькая упаковка"> 
@@ -122,7 +123,7 @@
                </div>
                <button class="card__item-order">ЗАКАЗАТЬ</button>
             </div>
-            <div class="card__item-grey-line"></div>
+            <div class="card__item-divider-line"></div>
             <div class="card__item card__item--green">
                <div class="card_item-main">
                   <div class="card__item-img card__item-img--big">
@@ -139,7 +140,7 @@
                </div>
                <button class="card__item-order">ЗАКАЗАТЬ</button>
             </div>
-            <div class="card__item-grey-line"></div>
+            <div class="card__item-divider-line"></div>
             <div class="card__item card__item--blue">
                <div class="card_item-main">
                   <div class="card__item-img">
@@ -156,7 +157,7 @@
                </div>
                <button class="card__item-order">ЗАКАЗАТЬ</button>
             </div>
-            <div class="card__item-grey-line"></div>
+            <div class="card__item-divider-line"></div>
             <div class="card__item card__item--blue">
                <div class="card_item-main">
                   <div class="card__item-img card__item-img--big">
@@ -173,7 +174,7 @@
                </div>
                <button class="card__item-order">ЗАКАЗАТЬ</button>
             </div>
-            <div class="card__item-grey-line"></div>
+            <div class="card__item-divider-line"></div>
             <div class="card__item card__item--purple">
                <div class="card_item-main">
                   <div class="card_item-main">
@@ -190,7 +191,7 @@
                </div>
                <button class="card__item-order">ЗАКАЗАТЬ</button>
             </div>
-            <div class="card__item-grey-line"></div>
+            <div class="card__item-divider-line"></div>
             <div class="show-all__wrapper">
                <svg class="show-all__pic" version="1.1" id="Layer_1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve">
                   <style type="text/css">
@@ -204,12 +205,12 @@
                <p class="show-all__comment">На самом деле вкусов гораздо больше!</p>
                <button class="show-all__click">ПОКАЗАТЬ ВСЕ</button>
             </div>
-            <div class="card__item-grey-line"></div>
+            <div class="show-all__divider-line"></div>
             <div class="extra">
                <h2 class="extra__title">Дополнительные товары</h2>
-               <div class="extra__green-line"></div>
+               <div class="extra__decor-line"></div>
             </div>
-            <div class="extra-grey-line"></div>
+            <div class="extra-divider-line"></div>
             <div class="extra__item extra__item--sugar">
                <p class="extra__item-title">САХАРОЗАМЕНИТЕЛЬ</p>
                <div class="extra__item-text">
@@ -217,7 +218,7 @@
                </div>
                <button class="extra__item-order">ЗАКАЗАТЬ</button> 
             </div>
-            <div class="card__item-grey-line"></div>
+            <div class="extra-divider-line"></div>
             <div class="extra__item extra__item--water">
                <p class="extra__item-title">ПИТЬЕВАЯ ВОДА</p>
                <div class="extra__item-text">
@@ -225,7 +226,7 @@
                </div>
                <button class="extra__item-order">ЗАКАЗАТЬ</button> 
             </div>
-            <div class="card__item-grey-line"></div>
+            <div class="extra-divider-line"></div>
             <div class="extra__item extra__item--milk">
                <p class="extra__item-title">МОЛОКО</p>
                <div class="extra__item-text">
@@ -233,7 +234,7 @@
                </div>
                <button class="extra__item-order">ЗАКАЗАТЬ</button> 
             </div>
-            <div class="card__item-grey-line"></div>
+            <div class="extra-divider-line"></div>
             <div class="extra__item extra__item--vitamin">
                <p class="extra__item-title">ВИТАМИНЫ</p>
                <div class="extra__item-text">
@@ -241,8 +242,8 @@
                </div>
                <button class="extra__item-order">ЗАКАЗАТЬ</button> 
             </div>
-            <div class="card__item-grey-line"></div>
-            <div class="case">
+            <div class="extra-divider-line"></div>
+            <div class="case"> 
                <svg class="case-pic" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" 
                   xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55.5 60" 
                   style="enable-background:new 0 0 55.5 60;" xml:space="preserve">
@@ -256,7 +257,7 @@
                      H28.9V43.9h20.2v10C49.1,55.9,47.5,57.6,45.5,57.6z M49.1,41.5H28.9V27.8h20.2V41.5z M53.1,24.7c0,0.4-0.3,0.7-0.7,0.7h-2
                      c0,0,0,0,0,0s0,0,0,0H27.7c0,0,0,0,0,0s0,0,0,0H5.2c0,0,0,0,0,0s0,0,0,0h-2c-0.4,0-0.7-0.3-0.7-0.7v-9.4c0-0.4,0.3-0.7,0.7-0.7h49.2
                      c0.4,0,0.7,0.3,0.7,0.7V24.7z"/>
-               </svg>
+               </svg> 
                <p class="case-text">Закажите все и получите чехол для кота в подарок!</p>
             </div>
             <div class="ask">

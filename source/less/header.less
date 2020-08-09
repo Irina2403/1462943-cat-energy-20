@@ -1,5 +1,6 @@
 .page-header {  
     width: 280px;
+    height: 66px;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 11px;
@@ -9,6 +10,97 @@
     align-items: center;
     position: relative; 
     background-color: var(--basic_white); 
-    height: 66px;
-    text-align: center;
+    text-align: center; 
 }
+.main-nav__toggle {
+    background-color: var(--basic_white);
+    border: 2px solid transparent; 
+}
+.hamburger {
+    position: absolute; 
+    top: 18px;
+    left: 250px;
+    right: 0;
+    bottom: 0; 
+    //cursor: pointer; 24 16
+    width: 24px;
+    height: 16px;  
+}
+.bar {
+   display: block; 
+  width:100%;
+  height:20%;
+  margin-top:20%; 
+  background: var(--basic_black); 
+  transition:0.25s;
+  -webkit-transition:0.25s; 
+-webkit-user-select: none;
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none; 
+}
+.page-header__logo {
+    height: 38px;
+    width: 195px;
+   /* @media (min-width:@desktop-width) { 
+        height: 58px;
+        width: 174px;
+    }
+    @media (min-width: @desktop-width) {
+        height: 59px;
+        width: 202px;
+    }   */
+}
+/*
+.pade-header__main-nav { 
+    @media (min-width:@mobile-width-only) {
+        display: none; 
+    } 
+    @media (min-width:@tablet-width) { 
+        list-style: none;
+        margin: 0;
+        padding: 0; 
+        display: flex;
+        justify-content: space-between;
+        text-align: end; 
+        width: 440px;
+        height: 36px;
+    }
+    @media (min-width: @desktop-width) {
+        list-style: none;
+        margin: 0;
+        padding: 0; 
+        width: 478px;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        text-align: end;
+    } 
+}
+
+.main-nav__item { 
+    @media (min-width:@mobile-width-only) {
+        display: none; 
+    } 
+    @media (min-width:@tablet-width) { 
+        font-family: Oswald; 
+        font-size: 18px;
+        line-height: 24px; 
+        color: var(--basic_black); 
+    } 
+    @media (min-width: @desktop-width) {
+       font-family: Oswald; 
+       font-size: 20px;
+       line-height: 30px;
+       color: var(--basic_white);
+    } 
+}
+.main-nav__toggle {  
+    @media (min-width:@tablet-width) { 
+        display: none;  
+    } 
+    @media (min-width: @desktop-width) {
+        display: none;
+    }  
+}
+*/
