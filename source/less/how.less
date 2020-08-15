@@ -1,45 +1,166 @@
-.how {  
-    color: var(--basic_black); 
-    &__title  {
-        background-color: var(--basic_white); 
-        font-family: Oswald;
-        font-size: 36px;
-        line-height: 40px; 
-        height: 40px;
-        margin-left: 20px; 
-    }
+.how {
+	color: var(--basic_black);
+	@media (min-width: @desktop-width) {
+		position: relative;
+		top: -470px;
+	}
+	&__title {
+		background-color: var(--basic_white);
+		font-family: Oswald;
+		font-size: 36px;
+		line-height: 40px;
+		height: 40px;
+		margin-left: 20px;
+		@media (min-width: @tablet-width) {
+			font-family: Oswald;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 60px;
+			line-height: 60px;
+			width: 375px;
+		}
+		@media (min-width: @desktop-width) {
+			font-family: Oswald;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 60px;
+			line-height: 60px;
+			width: 375px;
+		}
+	}
 }
+
 .how__wrapper {
-    width: 279px;
-    background-color: var(--basic_white); 
-    margin-top: 38px;
-    margin-left: 20px ;
-    margin-bottom: 40px;
-    margin-right: 21px; 
+	width: 279px;
+	background-color: var(--basic_white);
+	margin-top: 38px;
+	margin-left: 20px;
+	margin-bottom: 40px;
+	margin-right: 21px;
+	@media (min-width: @tablet-width) {
+		width: 615px;
+		background-color: var(--basic_white);
+		margin-top: 32px;
+		margin-left: 30px;
+		margin-bottom: 47px;
+		//margin-right: 21px;
+	}
+	@media (min-width: @desktop-width) {}
 }
+
 .how__list {
-    padding: 0;
-    margin: 0;
-    list-style: none; 
-    background-color: var(--basic_white);
-    color: var(--basic_black); 
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	background-color: var(--basic_white);
+	color: var(--basic_black);
+	@media (min-width: @tablet-width) {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		width: 613px;
+		background-color: var(--basic_white);
+	}
+	@media (min-width: @desktop-width) {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		width: 1202px;
+		background-color: var(--basic_white);
+	}
 }
-.how__item { 
-    font:inherit;
-    display: flex;
-    flex-direction: row;
+
+.how__item {
+	font: inherit;
+	display: flex;
+	flex-direction: row;
+	@media (min-width: @tablet-width) {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 37px;
+		width: 230px;
+		height: 280px;
+	}
+	@media (min-width: @desktop-width) {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 37px;
+		width: 230px;
+		height: 280px;
+	}
 }
-.how__pic { 
-    background-color: var(--basic_green);
-    width: 60px;
-    height: 60px;  
+
+.how__pic {
+	background-color: var(--basic_green);
+	width: 60px;
+	height: 60px;
+	@media (min-width: @tablet-width) {
+		margin-top: 30px;
+		width: 80px;
+		height: 80px;
+		background-color: var(--basic_green);
+	}
+	@media (min-width: @desktop-width) {}
 }
+
 .how__description {
-    max-width: 199px;
-    margin-top: 0;
-    padding-left: 20px; 
-    color: var(--special_dark-grey);
-    font-size: 14px;
-    line-height: 18px; 
-    font-family: Arial;
+	max-width: 199px;
+	margin-top: 0;
+	padding-left: 20px;
+	color: var(--special_dark-grey);
+	font-size: 14px;
+	line-height: 18px;
+	font-family: Arial;
+	@media (min-width: @tablet-width) {
+		margin-top: 31px;
+		width: 200px;
+		height: 72px;
+		font-size: 16px;
+		color: var(--special_dark-grey);
+		background-color: transparent;
+		position: relative;
+		top: -150px;
+	}
+	@media (min-width: @desktop-width) {
+		padding-left: 0;
+		margin-top: 31px;
+		width: 201px;
+		height: 72px;
+		font-size: 14px;
+		color: var(--special_dark-grey);
+		background-color: transparent;
+		position: relative;
+		top: -150px;
+	}
+}
+
+.how__number {
+	display: none;
+	@media (min-width: @tablet-width) {
+		display: block;
+		font-size: 280px;
+		line-height: 280px;
+		background-color: transparent;
+		color: var(--basic_grey);
+		width: 112px;
+		height: auto;
+		font-family: Oswald;
+	}
+	@media (min-width: @desktop-width) {
+		display: block;
+		font-size: 280px;
+		line-height: 280px;
+		background-color: transparent;
+		color: var(--basic_grey);
+		width: 112px;
+		height: auto;
+		font-family: Oswald;
+		margin-left: 25px;
+	}
 }

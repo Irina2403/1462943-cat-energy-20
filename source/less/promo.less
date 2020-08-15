@@ -1,45 +1,141 @@
 .promo {
-    height: 480px;
-    width: 320px;
-    font: inherit;
-    background-color: var(--basic_white);
-    background-image: url("../img/index-background-mobile@1x.jpg");
-    background-repeat: no-repeat;  
+	height: 480px;
+	width: 320px;
+	font-family: Oswald;
+	background-color: var(--basic_white);
+	background-image: url("../img/index-background-mobile@1x.jpg");
+	background-repeat: no-repeat;
+	@media (min-width: @tablet-width) {
+		background-color: var(--basic_white);
+		background-image: none;
+		width: 709px;
+		margin-bottom: 300px;
+	}
+	@media (min-width: @desktop-width) {
+		background-color: transparent;
+		min-width: 1200px;
+		height: auto;
+		margin: 0;
+		position: relative;
+		z-index: 1;
+	}
 }
+
+.wrapper-header-promo {
+	@media (min-width: @desktop-width) {
+		width: 1200px;
+		background-image: url("../img/index-background-desktop@1x.jpg");
+		background-position: right top;
+		background-repeat: no-repeat;
+		position: relative;
+		z-index: 2;
+	}
+}
+
 .promo__main-header {
-    font-family: Oswald; 
-    text-align: center;
-    color: var(--basic_white);  
-    font-style: normal; 
-    font-size: 36px;
-    line-height: 36px;
-    width: 249px;
-    height: 72px;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0);
+	font-family: Oswald;
+	text-align: center;
+	color: var(--basic_white);
+	font-style: normal;
+	font-size: 36px;
+	line-height: 36px;
+	width: 249px;
+	height: 72px;
+	@media (min-width: @tablet-width) {
+		width: 414px;
+		height: 120px;
+		font-family: Oswald;
+		margin-left: 80px;
+		font-size: 60px;
+		line-height: 60px;
+		color: var(--basic_black);
+		text-align: left;
+	}
+	@media (min-width: @desktop-width) {
+		width: 414px;
+		height: 120px;
+		margin: 0;
+		background-color: transparent;
+		font-family: Oswald;
+		text-align: left;
+		color: var(--basic_black);
+		position: relative;
+		left: 0%;
+		transform: translate(0%, 0);
+		margin-left: 60px;
+	}
 }
+
 .promo__slogan {
-    font: inherit;
-    font-weight: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 14px;
-    color: var(--basic_white); 
-    text-align: center;  
-} 
+	font: inherit;
+	font-weight: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 14px;
+	color: var(--basic_white);
+	text-align: center;
+	@media (min-width: @tablet-width) {
+		margin-left: 90px;
+		font-size: 20px;
+		line-height: 20px;
+		font-family: Oswald;
+		color: var(--basic_black);
+		width: 283px;
+	}
+	@media (min-width: @desktop-width) {
+		margin-top: 40px;
+		margin-left: 60px;
+		font-size: 20px;
+		line-height: 20px;
+		font-family: Oswald;
+		color: var(--basic_black);
+		background-color: transparent;
+		width: 283px;
+	}
+}
+
 .promo__toggle {
-    font:inherit;
-    font-size: 14px;
-    line-height: 18px;
-    color: var(--basic_white);  
-    background-color: var(--basic_green); 
-    text-transform: uppercase;
-    padding: 7px 44px;  
-    border: 2px solid transparent; 
-    width: 280px;
-    height: 40px;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0); 
+	font: inherit;
+	font-size: 14px;
+	line-height: 18px;
+	color: var(--basic_white);
+	background-color: var(--basic_green);
+	text-transform: uppercase;
+	padding: 7px 44px;
+	border: 2px solid transparent;
+	width: 280px;
+	height: 40px;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+	@media (min-width: @tablet-width) {
+		position: relative;
+		top: -600px;
+		left: 230px;
+	}
+	@media (min-width: @desktop-width) {
+		position: relative;
+		top: -450px;
+		left: 200px;
+	}
+}
+
+.promo__pic {
+	position: relative;
+	width: 280px;
+	height: 270px;
+	background-image: url("../img/index-can-mobile@1x.png");
+	@media (min-width: @tablet-width) {
+		background-image: url("../img/index-can-tablet@1x.jpg");
+		position: relative;
+		width: 709px;
+		height: 609px;
+	}
+	@media (min-width: @desktop-width) {
+		background-image: url("../img/index-can-desktop@1x.png");
+		width: 552px;
+		height: 499px;
+		position: relative;
+		left: 450px;
+	}
 }
