@@ -18,6 +18,7 @@
  --special_border-grey: 1px solid #E7E7E7;
  --special_border-green:1px solid #68B738;
  --special_grey-plus: #D3D3D3;
+ --special_border-example: 2px solid #E6E6E6;
 }
 // Viewports 
 @tablet-width: 768px;
@@ -29,16 +30,14 @@ body {
     font-family: Oswald, Arial, sans-serif;
     font-size: 14px;
     line-height: 24px; 
-    color: var(--basic_black); 
-    //background-color: var(--special_background); 
+    color: var(--basic_black);  
     background-color: var(--basic_white);
     background-position: top center;
     background-repeat: no-repeat; 
     @media (min-width:@mobile-width-only) {
        min-width: 320px;  
     } 
-    @media (min-width:@tablet-width) { 
-       //min-width: 768px;
+    @media (min-width:@tablet-width) {  
        width: 768px;
     }
     @media (min-width: @desktop-width) {
@@ -61,10 +60,8 @@ body {
     clip:rect(0 0 0 0);
     overflow: hidden;  
 }
-.container {
-   // @media (min-width:@mobile-width-only) {
-        width: 320px;  
-    //} 
+.container { 
+     width: 320px;  
      @media (min-width:@tablet-width) { 
         width: 768px;
     }

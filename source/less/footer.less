@@ -5,16 +5,16 @@
 	grid-template-rows: min-content 1fr min-content;
 	text-align: center;
 	align-items: center;
-	@media (min-width: @tablet-width) {
+	@media (min-width: @tablet-width) { 
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		background: var(--basic_grey);
-	}
-	@media (min-width: @desktop-width) {
-		width: 768px;
 		position: relative;
-		top: -540px;
+		top: -430px;
+	}
+	@media (min-width: @desktop-width) { 
+		top: -800px;
 		background: var(--basic_grey);
 		display: flex;
 		flex-direction: row;
@@ -50,7 +50,7 @@
 	}
 	@media (min-width: @desktop-width) {
 		position: relative;
-		top: -310px;
+		top: -97px;
 		background: var(--basic_grey);
 		display: flex;
 		flex-direction: row;
@@ -70,7 +70,42 @@
 		}
 	}
 }
-
+.page-footer--form {
+	background: var(--basic_grey);
+	color: var(--basic_black);
+	display: grid;
+	grid-template-rows: min-content 1fr min-content;
+	text-align: center; 
+	align-items: center;
+	@media (min-width: @tablet-width) {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		background: var(--basic_grey);
+	}
+	@media (min-width: @desktop-width) {
+		width: 1220px;
+		position: relative;
+		top: 0px;
+		background: var(--basic_grey);
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	&__grey-line {
+		border: var(--basic_border);
+		width: 240px;
+		position: relative;
+		left: 50%;
+		transform: translate(-50%, 0);
+		@media (min-width: @tablet-width) {
+			display: none;
+		}
+		@media (min-width: @desktop-width) {
+			display: none;
+		}
+	}
+}
 .page-footer__wrapper {
 	height: 236px;
 	width: 320px;
@@ -82,19 +117,18 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		background: var(--basic_grey);
+		background: var(--basic_grey); 
 		position: relative;
 		left: 50%;
 		transform: translate(-50%, 0);
 	}
 	@media (min-width: @desktop-width) {
 		height: 34px;
-		width: 1220px;
+		width: 1080px;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		background: var(--basic_grey);
-		padding-top: 55px;
+		background: var(--basic_grey); 
 		position: relative;
 		left: 50%;
 		transform: translate(-50%, 0);

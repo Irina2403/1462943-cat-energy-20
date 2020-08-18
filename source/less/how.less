@@ -4,7 +4,7 @@
 		position: relative;
 		top: -470px;
 	}
-	&__title {
+	&-title {
 		background-color: var(--basic_white);
 		font-family: Oswald;
 		font-size: 36px;
@@ -30,7 +30,7 @@
 	}
 }
 
-.how__wrapper {
+.how-wrapper {
 	width: 279px;
 	background-color: var(--basic_white);
 	margin-top: 38px;
@@ -42,13 +42,11 @@
 		background-color: var(--basic_white);
 		margin-top: 32px;
 		margin-left: 30px;
-		margin-bottom: 47px;
-		//margin-right: 21px;
-	}
-	@media (min-width: @desktop-width) {}
+		margin-bottom: 47px; 
+	}  
 }
 
-.how__list {
+.how-list {
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -76,7 +74,7 @@
 	}
 }
 
-.how__item {
+.how-item {
 	font: inherit;
 	display: flex;
 	flex-direction: row;
@@ -96,7 +94,7 @@
 	}
 }
 
-.how__pic {
+.how-pic {
 	background-color: var(--basic_green);
 	width: 60px;
 	height: 60px;
@@ -105,11 +103,10 @@
 		width: 80px;
 		height: 80px;
 		background-color: var(--basic_green);
-	}
-	@media (min-width: @desktop-width) {}
+	} 
 }
 
-.how__description {
+.how-description {
 	max-width: 199px;
 	margin-top: 0;
 	padding-left: 20px;
@@ -140,7 +137,7 @@
 	}
 }
 
-.how__number {
+.how-number {
 	display: none;
 	@media (min-width: @tablet-width) {
 		display: block;
