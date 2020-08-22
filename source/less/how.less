@@ -1,9 +1,5 @@
 .how {
 	color: var(--basic_black);
-	@media (min-width: @desktop-width) {
-		position: relative;
-		top: -470px;
-	}
 	&-title {
 		background-color: var(--basic_white);
 		font-family: Oswald;
@@ -12,20 +8,12 @@
 		height: 40px;
 		margin-left: 20px;
 		@media (min-width: @tablet-width) {
-			font-family: Oswald;
-			font-style: normal;
-			font-weight: normal;
 			font-size: 60px;
 			line-height: 60px;
 			width: 375px;
 		}
 		@media (min-width: @desktop-width) {
-			font-family: Oswald;
-			font-style: normal;
-			font-weight: normal;
-			font-size: 60px;
-			line-height: 60px;
-			width: 375px;
+			margin-top: 71px;
 		}
 	}
 }
@@ -42,8 +30,8 @@
 		background-color: var(--basic_white);
 		margin-top: 32px;
 		margin-left: 30px;
-		margin-bottom: 47px; 
-	}  
+		margin-bottom: 47px;
+	}
 }
 
 .how-list {
@@ -52,25 +40,18 @@
 	list-style: none;
 	background-color: var(--basic_white);
 	color: var(--basic_black);
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	height: 300px;
 	@media (min-width: @tablet-width) {
-		padding: 0;
-		margin: 0;
-		list-style: none;
-		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
 		width: 613px;
-		background-color: var(--basic_white);
+		height: 640px;
 	}
 	@media (min-width: @desktop-width) {
-		padding: 0;
-		margin: 0;
-		list-style: none;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
 		width: 1202px;
-		background-color: var(--basic_white);
+		height: 280px;
 	}
 }
 
@@ -79,14 +60,6 @@
 	display: flex;
 	flex-direction: row;
 	@media (min-width: @tablet-width) {
-		display: flex;
-		flex-wrap: wrap;
-		margin-top: 37px;
-		width: 230px;
-		height: 280px;
-	}
-	@media (min-width: @desktop-width) {
-		display: flex;
 		flex-wrap: wrap;
 		margin-top: 37px;
 		width: 230px;
@@ -102,8 +75,7 @@
 		margin-top: 30px;
 		width: 80px;
 		height: 80px;
-		background-color: var(--basic_green);
-	} 
+	}
 }
 
 .how-description {
@@ -119,21 +91,14 @@
 		width: 200px;
 		height: 72px;
 		font-size: 16px;
-		color: var(--special_dark-grey);
 		background-color: transparent;
 		position: relative;
 		top: -150px;
 	}
 	@media (min-width: @desktop-width) {
 		padding-left: 0;
-		margin-top: 31px;
 		width: 201px;
-		height: 72px;
 		font-size: 14px;
-		color: var(--special_dark-grey);
-		background-color: transparent;
-		position: relative;
-		top: -150px;
 	}
 }
 
@@ -150,14 +115,6 @@
 		font-family: Oswald;
 	}
 	@media (min-width: @desktop-width) {
-		display: block;
-		font-size: 280px;
-		line-height: 280px;
-		background-color: transparent;
-		color: var(--basic_grey);
-		width: 112px;
-		height: auto;
-		font-family: Oswald;
 		margin-left: 25px;
 	}
 }
