@@ -11,6 +11,7 @@
 			font-size: 60px;
 			line-height: 60px;
 			width: 375px;
+			margin-left: 30px;
 		}
 		@media (min-width: @desktop-width) {
 			margin-top: 71px;
@@ -45,6 +46,7 @@
 	flex-direction: column;
 	height: 300px;
 	@media (min-width: @tablet-width) {
+		flex-direction: row;
 		flex-wrap: wrap;
 		width: 613px;
 		height: 640px;
@@ -60,30 +62,26 @@
 	display: flex;
 	flex-direction: row;
 	@media (min-width: @tablet-width) {
-		flex-wrap: wrap;
-		margin-top: 37px;
-		width: 230px;
+		flex-wrap: wrap; 
+		width: 245px;
 		height: 280px;
+	}
+	@media (min-width: @desktop-width) {
+		margin-top: 37px;
 	}
 }
 
-.how-description {
-	&--mobil {
-		margin-bottom: 0px;
-	}
-}
 
 .how-pic {
 	background-color: var(--basic_green);
 	width: 60px;
 	height: 60px;
 	@media (min-width: @tablet-width) {
-		margin-top: 30px;
-		width: 80px;
-		height: 80px;
-	}
-}
-
+		margin-left: 15px;
+		margin-top: 35px;
+		padding: 5% 5%;
+	} 
+} 
 .how-description {
 	max-width: 199px;
 	margin-top: 0;
@@ -92,20 +90,33 @@
 	font-size: 14px;
 	line-height: 18px;
 	font-family: Arial;
-	@media (min-width: @tablet-width) {
-		margin-top: 31px;
-		width: 200px;
+	@media (min-width: @tablet-width) { 
+		margin-top: 17px; 
+		max-width: 230px;
 		height: 72px;
-		font-size: 16px;
+		font-size: 16px; 
+        line-height: 24px;
 		background-color: transparent;
 		position: relative;
 		top: -150px;
+		padding-left: 0px;
+		margin-left: 15px;
 	}
 	@media (min-width: @desktop-width) {
 		padding-left: 0;
 		width: 201px;
 		font-size: 14px;
 	}
+}
+
+.how-description {
+	&--mobil {
+		margin-bottom: 0px;
+		@media (min-width: @tablet-width) {
+			max-width: 245px;
+		}
+	} 
+
 }
 
 .how-number {
@@ -118,6 +129,7 @@
 		color: var(--basic_grey);
 		width: 112px;
 		height: auto;
+		margin-left: 20px;
 		font-family: Oswald;
 	}
 	@media (min-width: @desktop-width) {

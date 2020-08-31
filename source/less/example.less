@@ -4,7 +4,8 @@
 	@media (min-width: @tablet-width) {
 		background-color: var(--basic_white);
 		width: 768px;
-		height: 1081px;
+		//height: 1081px;
+		margin-bottom: 30px;
 	}
 	@media (min-width: @desktop-width) {
 		width: 1220px;
@@ -32,10 +33,9 @@
 	margin-bottom: 33px;
 	margin-left: 20px;
 	@media (min-width: @tablet-width) {
-		background-color: var(--basic_white);
-		margin-top: 43px;
-		margin-left: 30px;
-		;
+		background-color: var(--basic_white); 
+		margin-top: 0px;
+		margin-left: 30px; 
 		font-size: 60px;
 		line-height: 60px;
 	}
@@ -111,8 +111,8 @@
 		background-color: var(--special_background);
 		@media (min-width: @tablet-width) {
 			background-color: var(--basic_white);
-			width: 162px;
-			height: 77px;
+			width: 162px; 
+			height: 60px;
 			font-size: 30px;
 		}
 		@media (min-width: @desktop-width) {
@@ -134,8 +134,8 @@
 		background-color: var(--basic_background);
 		@media (min-width: @tablet-width) {
 			position: absolute;
-			top: 55px;
-			left: 35px;
+			top: 40px;
+			left: 30px;
 			width: 97px;
 			font-size: 14px;
 			background-color: var(--basic_white);
@@ -165,7 +165,7 @@
 		@media (min-width: @tablet-width) {
 			background-color: var(--basic_white);
 			width: 162px;
-			height: 77px;
+			height: 60px;
 			font-size: 30px;
 		}
 		@media (min-width: @desktop-width) {
@@ -189,7 +189,7 @@
 		background-color: var(--basic_background);
 		@media (min-width: @tablet-width) {
 			position: absolute;
-			top: 55px;
+			top: 40px;
 			left: 185px;
 			background-color: var(--basic_white);
 			width: 127px;
@@ -219,7 +219,10 @@
 		margin-right: 31px;
 		margin-left: 0px;
 		text-align: end;
-		margin-top: 54px;
+		margin-top: 60px; 
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 	@media (min-width: @desktop-width) {
 		margin-left: 80px;
@@ -283,12 +286,12 @@
 			z-index: 2;
 			margin-left: 30px;
 			&__left {
-				margin-top: 30px;
+				//margin-top: 30px;
 				width: 354px;
 				height: 620px;
 				background-image: url("../img/before-tablet@1x.png");
 				background-repeat: no-repeat;
-				background-position: center left;
+				background-position: center left -5%;
 			}
 			&__right {
 				width: 354px;
@@ -340,9 +343,9 @@
 	padding-bottom: 25px;
 	@media (min-width: @tablet-width) {
 		position: relative;
-		top: -500px;
+		top: -405px;
 		z-index: 1;
-		padding-top: 461px;
+		padding-top: 361px;
 		height: 34px;
 		padding-bottom: 67px;
 		background-color: var(--special_background);
@@ -369,7 +372,7 @@
 		font-weight: normal;
 		font-size: 20px;
 		line-height: 30px;
-		padding-left: 86px;
+		padding-left: 100px;
 	}
 	@media (min-width: @desktop-width) {
 		padding-left: 6px;
@@ -383,15 +386,13 @@
 	border-radius: 6px;
 	@media (min-width: @tablet-width) {
 		width: 428px;
-		height: 2px;
+		height: 4px;
 		background-color: var(--special_grey);
 		position: relative;
-	}
-	@media (min-width: @tablet-width) {
-		width: 428px;
-		padding-left: 20px;
-		padding-right: 20px;
-	}
+		margin-left: 10px;
+		padding-left: 0px;
+		padding-right: 0px;
+	} 
 }
 
 .example__now {
@@ -423,12 +424,12 @@
 .example__toggle-circle {
 	@media (min-width: @tablet-width) {
 		position: absolute;
-		margin-top: 13px;
+		//margin-top: 13px;
 		left: 50%;
-		height: 4px;
-		width: 4px;
+		height: 6px;
+		width: 6px;
 		padding: 0;
-		border: 8px solid var(--basic_white);
+		border: 14px solid var(--basic_white);
 		border-radius: 50%;
 		background: var(--basic_green);
 	}
