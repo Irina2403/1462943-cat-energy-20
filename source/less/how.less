@@ -1,5 +1,8 @@
 .how {
 	color: var(--basic_black);
+	@media (min-width: @desktop-width) {
+		margin-left: 105px;
+	}
 	&-title {
 		background-color: var(--basic_white);
 		font-family: Oswald;
@@ -14,7 +17,8 @@
 			margin-left: 30px;
 		}
 		@media (min-width: @desktop-width) {
-			margin-top: 71px;
+			margin-top: 50px;
+			margin-left: 5px;
 		}
 	}
 }
@@ -32,6 +36,9 @@
 		margin-top: 32px;
 		margin-left: 30px;
 		margin-bottom: 47px;
+	}
+	@media (min-width: @desktop-width) {
+		margin-left: 0px;
 	}
 }
 
@@ -52,8 +59,10 @@
 		height: 640px;
 	}
 	@media (min-width: @desktop-width) {
-		width: 1202px;
+		width: 1224px;
 		height: 280px;
+		flex-direction: row;
+		flex-wrap: wrap;
 	}
 }
 
@@ -62,15 +71,16 @@
 	display: flex;
 	flex-direction: row;
 	@media (min-width: @tablet-width) {
-		flex-wrap: wrap; 
+		flex-wrap: wrap;
 		width: 245px;
 		height: 280px;
 	}
-	@media (min-width: @desktop-width) {
-		margin-top: 37px;
+	&--not-last {
+		@media (min-width: @desktop-width) {
+			margin-right: 15px;
+		}
 	}
 }
-
 
 .how-pic {
 	background-color: var(--basic_green);
@@ -80,8 +90,18 @@
 		margin-left: 15px;
 		margin-top: 35px;
 		padding: 5% 5%;
-	} 
-} 
+	}
+	@media (min-width: @desktop-width) {
+		margin-left: 16px;
+		margin-top: 40px;
+	}
+	&--last {
+		@media (min-width: @desktop-width) {
+			margin-left: 0px;
+		}
+	}
+}
+
 .how-description {
 	max-width: 199px;
 	margin-top: 0;
@@ -90,12 +110,12 @@
 	font-size: 14px;
 	line-height: 18px;
 	font-family: Arial;
-	@media (min-width: @tablet-width) { 
-		margin-top: 17px; 
+	@media (min-width: @tablet-width) {
+		margin-top: 17px;
 		max-width: 230px;
 		height: 72px;
-		font-size: 16px; 
-        line-height: 24px;
+		font-size: 16px;
+		line-height: 24px;
 		background-color: transparent;
 		position: relative;
 		top: -150px;
@@ -104,19 +124,34 @@
 	}
 	@media (min-width: @desktop-width) {
 		padding-left: 0;
-		width: 201px;
-		font-size: 14px;
+		width: 245px;
+		font-size: 16px;
+		margin-left: 10px;
+		margin-top: 23px;
 	}
 }
 
 .how-description {
-	&--mobil {
+	&--last {
 		margin-bottom: 0px;
 		@media (min-width: @tablet-width) {
 			max-width: 245px;
 		}
-	} 
-
+		@media (min-width: @desktop-width) {
+			width: 245px;
+			margin-left: 0px;
+		}
+	}
+	&--not-last {
+		margin-bottom: 0px;
+		@media (min-width: @tablet-width) {
+			max-width: 245px;
+		}
+		@media (min-width: @desktop-width) {
+			width: 245px;
+			margin-left: 15px;
+		}
+	}
 }
 
 .how-number {

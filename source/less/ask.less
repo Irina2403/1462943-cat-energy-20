@@ -7,19 +7,17 @@
 		width: 768px;
 	}
 	@media (min-width: @desktop-width) {
-		width: 1220px;
+		width: 1440px;
 		height: 400px;
 		position: relative;
 	}
-} 
+}
 
 .ask__wrapper {
 	height: 114px;
 	background-color: var(--basic_grey);
 	display: flex;
-	//justify-content: center;
-	align-items:center;
-	//align-items: baseline;
+	align-items: center;
 	@media (min-width: @tablet-width) {
 		height: 201px;
 		width: 768px;
@@ -27,12 +25,36 @@
 		justify-content: space-between;
 	}
 	@media (min-width: @desktop-width) {
-		margin-left: 70px; 
+		margin-left: 70px;
 		position: absolute;
-		top: 45px;
+		top: 70px;
 		width: 570px;
 		height: 201px;
-		z-index: 2;
+		z-index: 2; 
+		margin-left: 110px;
+	}
+}
+
+.ask__wrapper {
+	&--catalog {
+		height: 114px;
+		background-color: var(--basic_grey);
+		display: flex;
+		align-items: center;
+		@media (min-width: @tablet-width) {
+			height: 201px;
+			width: 768px;
+			justify-content: space-between;
+		}
+		@media (min-width: @desktop-width) {
+			background-color: var(--basic_white);
+			position: absolute;
+			top: 100px;
+			width: 570px;
+			height: 201px;
+			z-index: 2;
+			margin-left: 110px;
+		}
 	}
 }
 
@@ -55,7 +77,31 @@
 	@media (min-width: @desktop-width) {
 		width: 163px;
 		height: 83;
-		margin-top: 66px;
+		margin-top: 70px;
+	}
+}
+
+.ask__dealer-catalog {
+	width: 110px;
+	height: 64px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 20px;
+	text-transform: uppercase;
+	font-family: Oswald;
+	font-size: 14px;
+	line-height: 18px;
+	@media (min-width: @tablet-width) {
+		width: 171px;
+		font-size: 20px;
+		line-height: 21px;
+		margin-left: 71px;
+		margin-top: 25px;
+	}
+	@media (min-width: @desktop-width) {
+		width: 163px;
+		margin-top: 14px;
+		margin-left: 75px;
 	}
 }
 
@@ -83,6 +129,37 @@
 	}
 	@media (min-width: @desktop-width) {
 		width: 155px;
+		text-align: start;
+		margin-right: 90px;
+	}
+}
+
+.ask__address-catalog {
+	width: 140px;
+	height: 49px;
+	font-family: Arial;
+	font-size: 14px;
+	line-height: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	@media (min-width: @tablet-width) {
+		display: flex;
+		flex-direction: column;
+		width: 159px;
+		height: 80px;
+		font-size: 16px;
+		line-height: 20px;
+		text-align: end;
+		margin-right: 71px;
+		margin-top: 25px;
+		&-part1 {
+			margin-bottom: 20px;
+		}
+	}
+	@media (min-width: @desktop-width) {
+		width: 155px;
+		text-align: start;
+		margin-right: 90px;
 	}
 }
 
@@ -94,7 +171,7 @@
 		height: 400px;
 	}
 	@media (min-width: @desktop-width) {
-		width: 1220px;
+		width: 1440px;
 		height: 400px;
 	}
 }
@@ -108,8 +185,8 @@
 		position: relative;
 		z-index: 1;
 	}
-	@media (min-width: @desktop-width) { 
-		width: 1220px;
+	@media (min-width: @desktop-width) {
+		width: 1440px;
 		height: 400px;
 	}
 }
@@ -130,8 +207,8 @@
 	@media (min-width: @desktop-width) {
 		width: 144px;
 		height: 100px;
-		left: 650px;
-		top: 100px;
+		left: 990px;
+		top: 150px;
 		z-index: 3;
 		position: absolute;
 	}

@@ -4,13 +4,13 @@
 	@media (min-width: @tablet-width) {
 		background-color: var(--basic_white);
 		width: 768px;
-		//height: 1081px;
 		margin-bottom: 30px;
 	}
 	@media (min-width: @desktop-width) {
-		width: 1220px;
-		height: 656px;
+		width: 1440px;
+		height: 620px;
 		background-color: var(--special_background);
+		margin-bottom: 0px;
 	}
 }
 
@@ -33,9 +33,9 @@
 	margin-bottom: 33px;
 	margin-left: 20px;
 	@media (min-width: @tablet-width) {
-		background-color: var(--basic_white); 
+		background-color: var(--basic_white);
 		margin-top: 0px;
-		margin-left: 30px; 
+		margin-left: 30px;
 		font-size: 60px;
 		line-height: 60px;
 	}
@@ -44,8 +44,8 @@
 		margin-top: 0px;
 		margin-bottom: 0px;
 		margin-left: 0px;
-		padding-top: 69px;
-		padding-left: 30px;
+		padding-top: 25px;
+		padding-left: 105px;
 		padding-bottom: 76px;
 	}
 }
@@ -72,7 +72,7 @@
 	}
 	@media (min-width: @desktop-width) {
 		margin-top: 65px;
-		margin-left: 70px;
+		margin-left: 10px;
 		font-size: 16px;
 		margin-bottom: 69px;
 		width: 436px;
@@ -94,7 +94,7 @@
 		margin-top: 54px;
 	}
 	@media (min-width: @desktop-width) {
-		margin-left: 70px;
+		margin-left: 10px;
 		margin-bottom: 40px;
 	}
 }
@@ -111,7 +111,7 @@
 		background-color: var(--special_background);
 		@media (min-width: @tablet-width) {
 			background-color: var(--basic_white);
-			width: 162px; 
+			width: 162px;
 			height: 60px;
 			font-size: 30px;
 		}
@@ -219,16 +219,17 @@
 		margin-right: 31px;
 		margin-left: 0px;
 		text-align: end;
-		margin-top: 60px; 
+		margin-top: 60px;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 	}
 	@media (min-width: @desktop-width) {
-		margin-left: 80px;
+		margin-left: 10px;
 		height: 20px;
-		background-color: transparent; 
+		background-color: transparent;
 		display: flex;
+		flex-direction: row;
 		justify-content: space-between;
 		width: 327px;
 		margin-top: 40px;
@@ -256,7 +257,8 @@
 		width: 690px;
 		height: 750px;
 		position: relative;
-		top: -220px;
+		top: -200px;
+		right: 160px;
 	}
 }
 
@@ -264,6 +266,8 @@
 	@media (min-width: @desktop-width) {
 		display: flex;
 		justify-content: space-between;
+		width: 1440px;
+		padding-left: 100px;
 	}
 }
 
@@ -286,7 +290,6 @@
 			z-index: 2;
 			margin-left: 30px;
 			&__left {
-				//margin-top: 30px;
 				width: 354px;
 				height: 620px;
 				background-image: url("../img/before-tablet@1x.png");
@@ -356,8 +359,8 @@
 		padding-top: 0px;
 		height: 34px;
 		width: 581px;
-		margin-left: 0px;
-		top: -70px;
+		top: -90px;
+		left: 70px;
 		padding-bottom: 20px;
 	}
 }
@@ -392,7 +395,7 @@
 		margin-left: 10px;
 		padding-left: 0px;
 		padding-right: 0px;
-	} 
+	}
 }
 
 .example__now {
@@ -424,7 +427,6 @@
 .example__toggle-circle {
 	@media (min-width: @tablet-width) {
 		position: absolute;
-		//margin-top: 13px;
 		left: 50%;
 		height: 6px;
 		width: 6px;

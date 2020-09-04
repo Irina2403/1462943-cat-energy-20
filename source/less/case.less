@@ -1,14 +1,17 @@
 .case {
+	margin-top: 40px;
 	width: 280px;
 	height: 289px;
 	background-image: url("../img/gift-photo-mobile@1x.jpg");
 	margin-left: 20px;
 	@media (min-width: @tablet-width) {
+		margin-top: 0px;
 		display: flex;
 		flex-direction: row;
 		background-image: url("../img/gift-photo-tablet@1x.jpg");
 		width: 708px;
 		height: 200px;
+		margin-bottom: 75px;
 	}
 	@media (min-width: @desktop-width) {
 		flex-direction: column;
@@ -27,10 +30,15 @@
 		color: var(--basic_white);
 		margin-left: 58px;
 		text-align: center;
+		margin-top: 60px;
+		@media (min-width: @desktop-width) {
+			margin-top: 50px;
+			margin-left: 50px;
+		}
 	}
 	&-pic {
-		width: 78px;
-		height: 80px;
+		width: 62px;
+		height: 66px;
 		fill: var(--basic_white);
 		margin-top: 58px;
 		position: relative;
@@ -42,6 +50,7 @@
 		}
 		@media (min-width: @desktop-width) {
 			display: block;
+			width: 20%;
 		}
 	}
 }
