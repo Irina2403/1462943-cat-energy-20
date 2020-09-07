@@ -1,10 +1,10 @@
 .form {
 	background-color: var(--basic_white);
-	&__extra {
-		width: 301px;
-		height: 26px;
-		margin-bottom: 36px;
+	&__extra { 
+		margin-bottom: 7px;
+		margin-top: 5px;
 		margin-left: 19px;
+		font-size: 16px; 
 		display: flex;
 		flex-direction: row;
 		@media (min-width: @tablet-width) {
@@ -13,6 +13,7 @@
 			width: 768px;
 			margin-left: 0px;
 			margin-bottom: 57px;
+			margin-top: 22px;
 		}
 		@media (min-width: @desktop-width) {
 			width: 1220px;
@@ -58,18 +59,20 @@
 
 .form-wrapper {
 	width: 280px;
-	height: 231px;
-	position: relative;
-	left: 50%;
-	transform: translate(-50%, 0);
+	margin-left: 14px; 
+	margin-bottom: 27px;
 	@media (min-width: @tablet-width) {
 		width: 565px;
 		height: 222px;
 		display: flex;
 		flex-wrap: wrap;
+		margin-bottom: 70px;
+		margin-left: 70px; 
 	}
 	@media (min-width: @desktop-width) {
 		width: 1120px;
+		margin-left: 14px; 
+	    margin-bottom: 20px;
 	}
 	&__toggle {
 		background-color: var(--basic_green);
@@ -81,9 +84,10 @@
 		font-weight: normal;
 		font-size: 16px;
 		line-height: 0px;
-		margin-top: 13px;
+		margin-top: 23px;
+		margin-left: 5px;
 		border: 2px solid transparent;
-		margin-bottom: 19px;
+		margin-bottom: 15px;
 		@media (min-width: @tablet-width) {
 			width: 282px;
 			height: 54px;
@@ -108,16 +112,20 @@
 		align-items: center;
 		width: 565px;
 		height: 115px;
+		margin-bottom: 50px;
 	}
 	@media (min-width: @desktop-width) {
 		width: 1120px;
 		height: 62px;
 	}
 	&__item {
-		width: 178px;
+		width: 240px;
+        margin-left: 3px;
+        margin-bottom: 14px; 
 		height: 30px;
 		font-size: 16px;
 		line-height: 18px;
+		display: flex;
 		@media (min-width: @tablet-width) {
 			padding: 0;
 			margin: 0;
@@ -129,22 +137,52 @@
 		}
 		@media (min-width: @desktop-width) {
 			margin-bottom: 22px;
+		} 
+	} 
+	&__item label {
+		margin-top: 7px;
+		margin-left: 10px; 
+		@media (min-width: @tablet-width) {
+			margin-left: 10px; 
 		}
 	}
-	&__item label {
-		@media (min-width: @tablet-width) {
-			margin-left: 10px;
-		}
+	&__item input {
+		width: 30px;
+		height: 30px;
 	}
 }
-
+.form-wrapper-list__item {
+	&--milk {
+		width: 240px;
+        margin-left: 3px;
+        margin-bottom: 14px; 
+		height: 30px;
+		font-size: 16px;
+		line-height: 18px;
+		display: flex;
+		margin-bottom: 10px; 
+		@media (min-width: @tablet-width) {
+			padding: 0;
+			margin: 0;
+			width: 221px;
+			height: 40px;
+			font-size: 20px;
+			line-height: 26px;
+			margin-bottom: 32px;
+		}
+		@media (min-width: @desktop-width) {
+			margin-bottom: 22px;
+		} 
+	
+ }
+}
 .extra-form-notice {
 	width: 157px;
 	height: 16px;
 	font-family: Arial;
 	font-size: 14px;
 	line-height: 16px;
-	margin-left: 82px;
+	margin-left: 70px;
 	@media (min-width: @tablet-width) {
 		font-size: 16px;
 		line-height: 16px;
