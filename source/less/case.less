@@ -12,6 +12,7 @@
 		width: 708px;
 		height: 200px;
 		margin-bottom: 75px;
+		margin-left: 30px;
 	}
 	@media (min-width: @desktop-width) {
 		flex-direction: column;
@@ -31,9 +32,15 @@
 		margin-left: 58px;
 		text-align: center;
 		margin-top: 60px;
+		@media (min-width: @tablet-width) {
+			margin-top: 70px;
+			margin-left: 275px;
+			text-align: left;
+		}
 		@media (min-width: @desktop-width) {
-			margin-top: 50px;
-			margin-left: 50px;
+			margin-top: 60px;
+			margin-left: 40px;
+			text-align: center;
 		}
 	}
 	&-pic {
@@ -45,12 +52,19 @@
 		left: 50%;
 		transform: translate(-50%, 0);
 		@media (min-width: @tablet-width) {
-			width: 80px;
-			height: 83px;
+			width: 60px;
+			height: 68px;
+			position: static;
+			left: 0%;
+			transform: translate(0%, 0);
+			margin-left: 85px;
 		}
 		@media (min-width: @desktop-width) {
+			position: relative;
+			left: 50%;
+			transform: translate(-50%, 0);
 			display: block;
-			width: 20%;
+			margin-left: 0px;
 		}
 	}
 }

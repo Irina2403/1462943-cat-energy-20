@@ -44,7 +44,7 @@
 		margin-top: 0px;
 		margin-bottom: 0px;
 		margin-left: 0px;
-		padding-top: 25px;
+		padding-top: 20px;
 		padding-left: 105px;
 		padding-bottom: 76px;
 	}
@@ -59,7 +59,7 @@
 	color: var(--special_dark-grey);
 	width: 279px;
 	margin-left: 20px;
-	margin-bottom: 25px;
+	margin-bottom: 14px;
 	@media (min-width: @tablet-width) {
 		width: 708px;
 		height: 72px;
@@ -88,10 +88,10 @@
 	justify-content: space-between;
 	margin-left: 20px;
 	@media (min-width: @tablet-width) {
-		width: 366px;
-		margin-left: 30px;
+		width: 370px;
+		margin-left: 29px;
 		position: relative;
-		margin-top: 54px;
+		margin-top: 51px;
 	}
 	@media (min-width: @desktop-width) {
 		margin-left: 10px;
@@ -101,8 +101,9 @@
 
 .example__lose {
 	&-text {
-		width: 124px;
-		height: 64px;
+		width: 120px;
+		height: 54px;
+		margin-top: 10px;
 		font-size: 24px;
 		line-height: 24px;
 		font-family: Oswald;
@@ -111,9 +112,10 @@
 		background-color: var(--special_background);
 		@media (min-width: @tablet-width) {
 			background-color: var(--basic_white);
-			width: 162px;
-			height: 60px;
+			width: 160px;
+			height: 68px;
 			font-size: 30px;
+			margin-top: 0px;
 		}
 		@media (min-width: @desktop-width) {
 			background-color: var(--special_background);
@@ -132,16 +134,18 @@
 		line-height: 12px;
 		color: var(--special_dark-grey);
 		background-color: var(--basic_background);
+		margin-top: 9px;
+		margin-bottom: 9px;
 		@media (min-width: @tablet-width) {
 			position: absolute;
-			top: 40px;
+			top: 49px;
 			left: 30px;
 			width: 97px;
 			font-size: 14px;
 			background-color: var(--basic_white);
 		}
 		@media (min-width: @desktop-width) {
-			top: 45px;
+			top: 50px;
 			left: 35px;
 			background-color: transparent;
 		}
@@ -154,8 +158,9 @@
 
 .example__day {
 	&-text {
-		width: 124px;
-		height: 64px;
+		width: 118px;
+		height: 54px;
+		margin-top: 8px;
 		font-size: 24px;
 		line-height: 24px;
 		font-family: Oswald;
@@ -164,9 +169,10 @@
 		background-color: var(--special_background);
 		@media (min-width: @tablet-width) {
 			background-color: var(--basic_white);
-			width: 162px;
-			height: 60px;
+			width: 160px;
+			height: 68px;
 			font-size: 30px;
+			margin-top: 0px;
 		}
 		@media (min-width: @desktop-width) {
 			background-color: var(--special_background);
@@ -175,7 +181,7 @@
 	}
 	&-name {
 		position: relative;
-		margin-left: 30px;
+		margin-left: 28px;
 		top: -22px;
 		left: 5px;
 		padding: 3px;
@@ -189,8 +195,8 @@
 		background-color: var(--basic_background);
 		@media (min-width: @tablet-width) {
 			position: absolute;
-			top: 40px;
-			left: 185px;
+			top: 45px;
+			left: 190px;
 			background-color: var(--basic_white);
 			width: 127px;
 			font-size: 14px;
@@ -258,11 +264,12 @@
 		height: 750px;
 		position: relative;
 		top: -200px;
-		right: 160px;
+		right: 170px;
 	}
 }
 
 .example__wrapper-big {
+	margin-bottom: 15px;
 	@media (min-width: @desktop-width) {
 		display: flex;
 		justify-content: space-between;
@@ -273,7 +280,7 @@
 
 .example__pic {
 	&--mobil {
-		margin-top: 37px;
+		margin-top: 32px;
 		@media (min-width: @tablet-width) {
 			display: none;
 		}
@@ -342,8 +349,8 @@
 	display: flex;
 	flex-direction: row;
 	align-items: baseline;
-	margin-left: 47px;
-	padding-bottom: 25px;
+	margin-left: 53px;
+	margin-top: 30px;
 	@media (min-width: @tablet-width) {
 		position: relative;
 		top: -405px;
@@ -354,12 +361,13 @@
 		background-color: var(--special_background);
 		width: 768px;
 		margin-left: 0px;
+		margin-top: 0px;
 	}
 	@media (min-width: @desktop-width) {
 		padding-top: 0px;
 		height: 34px;
 		width: 581px;
-		top: -90px;
+		top: -95px;
 		left: 70px;
 		padding-bottom: 20px;
 	}
@@ -367,8 +375,10 @@
 
 .example__then {
 	padding-left: 10px;
-	padding-right: 10px;
+	padding-right: 20px;
 	padding-bottom: 2px;
+	font-size: 16px;
+	line-height: 20px;
 	@media (min-width: @tablet-width) {
 		font-family: Oswald;
 		font-style: normal;
@@ -376,6 +386,7 @@
 		font-size: 20px;
 		line-height: 30px;
 		padding-left: 100px;
+		padding-right: 10px;
 	}
 	@media (min-width: @desktop-width) {
 		padding-left: 6px;
@@ -384,7 +395,7 @@
 
 .example__toggle {
 	width: 80px;
-	height: 10px;
+	height: 12px;
 	background-color: var(--basic_white);
 	border-radius: 6px;
 	@media (min-width: @tablet-width) {
@@ -399,9 +410,11 @@
 }
 
 .example__now {
-	padding-left: 10px;
+	padding-left: 20px;
 	padding-right: 10px;
 	padding-bottom: 2px;
+	font-size: 16px;
+	line-height: 20px;
 	@media (min-width: @tablet-width) {
 		font-family: Oswald;
 		font-style: normal;
@@ -413,8 +426,8 @@
 
 .example__green-strip {
 	position: relative;
-	top: -55px;
-	left: 107px;
+	top: -47px;
+	left: 127px;
 	width: 35px;
 	height: 6px;
 	background-color: var(--basic_green);
@@ -427,7 +440,7 @@
 .example__toggle-circle {
 	@media (min-width: @tablet-width) {
 		position: absolute;
-		left: 50%;
+		left: 48%;
 		height: 6px;
 		width: 6px;
 		padding: 0;
