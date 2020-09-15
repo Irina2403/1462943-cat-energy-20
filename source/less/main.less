@@ -3,7 +3,7 @@
 	display: grid;
 
 	@media (min-width: @desktop-width) {
-		width: 1440px;
+		min-width: 1220px; 
 	}
 }
 
@@ -15,7 +15,7 @@
 		min-width: 768px;
 	}
 	@media (min-width: @desktop-width) { 
-		min-width: 1330px; 
+		min-width: 1220px; 
 	}
 }
 
@@ -37,7 +37,7 @@
 	}
 	@media (min-width: @desktop-width) {
 		font-family: Oswald; 
-		margin-left: 110px;
+		margin-left: 0px;
 		margin-right: 900px;
 		margin-bottom: 114px;
 		margin-top: 78px;
@@ -52,7 +52,7 @@
 		min-width: 768px;
 	}
 	@media (min-width: @desktop-width) {
-		width: 1440px;
+		min-width: 1220px; 
 	}
 }
 
@@ -62,3 +62,11 @@
 		flex-wrap: wrap;
 	}
 }
+
+.main-wrapper {
+	@media (min-width: @desktop-width) {
+		width: 1220px;
+	    margin: 0 auto;
+	}
+	
+} 
